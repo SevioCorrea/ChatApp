@@ -152,20 +152,30 @@
                                     <constraint firstAttribute="trailing" secondItem="jY9-l3-E1g" secondAttribute="trailing" id="y40-C4-FjS"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVa-3W-BTv">
+                                <rect key="frame" x="25" y="382" width="364" height="0.0"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="stz-qy-NwU"/>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
+                            <constraint firstItem="stz-qy-NwU" firstAttribute="bottom" secondItem="XVa-3W-BTv" secondAttribute="bottom" constant="480" id="0lE-jZ-3B1"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="trailing" secondItem="stz-qy-NwU" secondAttribute="trailing" id="3Fk-Xo-DV8"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="trailing" secondItem="stz-qy-NwU" secondAttribute="trailing" id="Tq9-EG-2wo"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="Ub1-7q-3QS"/>
+                            <constraint firstItem="stz-qy-NwU" firstAttribute="trailing" secondItem="XVa-3W-BTv" secondAttribute="trailing" constant="25" id="h2H-Fq-bB0"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="top" secondItem="stz-qy-NwU" secondAttribute="top" id="oh4-tH-9d1"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="uog-qO-Id1"/>
+                            <constraint firstItem="XVa-3W-BTv" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" constant="25" id="v7j-6d-CBj"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="top" secondItem="Scg-da-zi8" secondAttribute="bottom" constant="-100" id="wib-t6-dnB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NaL-cF-ZWh"/>
                     <connections>
+                        <outlet property="adviceLabel" destination="XVa-3W-BTv" id="aBN-LL-5nO"/>
                         <outlet property="emailTextField" destination="u72-XV-6FN" id="hzv-IP-iOu"/>
                         <outlet property="passwordTextField" destination="hLb-P9-NkF" id="bPj-NA-ytO"/>
                         <segue destination="lwd-AH-u8E" kind="show" identifier="RegisterToChat" id="iJx-xu-4OI"/>
@@ -371,8 +381,11 @@
             <point key="canvasLocation" x="-86.956521739130437" y="134.59821428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="y7D-jv-BlJ"/>
+    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="j9q-Rm-d7k"/>
+        <segue reference="iJx-xu-4OI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
@@ -391,6 +404,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
