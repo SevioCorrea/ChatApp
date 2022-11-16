@@ -257,23 +257,46 @@
                                     <constraint firstItem="mZe-tG-Gm8" firstAttribute="leading" secondItem="7JT-7R-lw4" secondAttribute="leading" id="scf-xJ-Rnr"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAb-Km-xLZ">
+                                <rect key="frame" x="25" y="382" width="364" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET7-Ex-RYa">
+                                <rect key="frame" x="105" y="354" width="205" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Don't have an Account?"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="5v2-hE-4Ub" eventType="touchUpInside" id="4F4-6z-CEM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ibK-5F-w36"/>
                         <color key="backgroundColor" red="0.1647058824" green="0.78039215689999997" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="IAb-Km-xLZ" firstAttribute="leading" secondItem="NR3-PA-yDz" secondAttribute="leading" constant="25" id="1d7-MW-LBV"/>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="leading" secondItem="ibK-5F-w36" secondAttribute="leading" id="2C5-yn-42W"/>
+                            <constraint firstAttribute="trailing" secondItem="IAb-Km-xLZ" secondAttribute="trailing" constant="25" id="CyK-E0-ks9"/>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="top" secondItem="ibK-5F-w36" secondAttribute="top" id="HHp-L5-4dK"/>
+                            <constraint firstItem="ibK-5F-w36" firstAttribute="trailing" secondItem="IAb-Km-xLZ" secondAttribute="trailing" constant="25" id="Pkt-t9-Er4"/>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="trailing" secondItem="ibK-5F-w36" secondAttribute="trailing" id="b5A-nE-cpV"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="leading" secondItem="ibK-5F-w36" secondAttribute="leading" id="dag-ZR-y4c"/>
+                            <constraint firstAttribute="bottom" secondItem="IAb-Km-xLZ" secondAttribute="bottom" constant="400" id="fZJ-C8-C2u"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="trailing" secondItem="ibK-5F-w36" secondAttribute="trailing" id="mpt-SH-Lld"/>
+                            <constraint firstItem="ibK-5F-w36" firstAttribute="bottom" secondItem="IAb-Km-xLZ" secondAttribute="bottom" constant="480" id="mqi-Ge-VS3"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="top" secondItem="Mkq-A4-A98" secondAttribute="bottom" constant="-100" id="yL0-RW-8ad"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3kc-C7-WxD"/>
                     <connections>
+                        <outlet property="adviceLabel" destination="IAb-Km-xLZ" id="IKk-SJ-sCS"/>
                         <outlet property="emailTextField" destination="F21-w0-z4z" id="cQ3-UR-iXP"/>
                         <outlet property="passwordTextField" destination="abR-gz-opL" id="zwF-nb-nu7"/>
                         <segue destination="lwd-AH-u8E" kind="show" identifier="LoginToChat" id="j9q-Rm-d7k"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="DontHaveAccount" id="8Vs-f4-uSG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XcE-Gk-YZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -385,7 +408,8 @@
         <designable name="y7D-jv-BlJ"/>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="iJx-xu-4OI"/>
+        <segue reference="j9q-Rm-d7k"/>
+        <segue reference="8Vs-f4-uSG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
