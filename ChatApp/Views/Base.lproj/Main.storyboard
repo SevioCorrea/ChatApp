@@ -153,30 +153,20 @@
                                     <constraint firstAttribute="trailing" secondItem="jY9-l3-E1g" secondAttribute="trailing" id="y40-C4-FjS"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVa-3W-BTv">
-                                <rect key="frame" x="25" y="382" width="364" height="0.0"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="stz-qy-NwU"/>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
-                            <constraint firstItem="stz-qy-NwU" firstAttribute="bottom" secondItem="XVa-3W-BTv" secondAttribute="bottom" constant="480" id="0lE-jZ-3B1"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="trailing" secondItem="stz-qy-NwU" secondAttribute="trailing" id="3Fk-Xo-DV8"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="trailing" secondItem="stz-qy-NwU" secondAttribute="trailing" id="Tq9-EG-2wo"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="Ub1-7q-3QS"/>
-                            <constraint firstItem="stz-qy-NwU" firstAttribute="trailing" secondItem="XVa-3W-BTv" secondAttribute="trailing" constant="25" id="h2H-Fq-bB0"/>
                             <constraint firstItem="Scg-da-zi8" firstAttribute="top" secondItem="stz-qy-NwU" secondAttribute="top" id="oh4-tH-9d1"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" id="uog-qO-Id1"/>
-                            <constraint firstItem="XVa-3W-BTv" firstAttribute="leading" secondItem="stz-qy-NwU" secondAttribute="leading" constant="25" id="v7j-6d-CBj"/>
                             <constraint firstItem="j5s-Lc-WfT" firstAttribute="top" secondItem="Scg-da-zi8" secondAttribute="bottom" constant="-100" id="wib-t6-dnB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NaL-cF-ZWh"/>
                     <connections>
-                        <outlet property="adviceLabel" destination="XVa-3W-BTv" id="aBN-LL-5nO"/>
                         <outlet property="emailTextField" destination="u72-XV-6FN" id="hzv-IP-iOu"/>
                         <outlet property="passwordTextField" destination="hLb-P9-NkF" id="bPj-NA-ytO"/>
                         <segue destination="lwd-AH-u8E" kind="show" identifier="RegisterToChat" id="iJx-xu-4OI"/>
@@ -258,12 +248,6 @@
                                     <constraint firstItem="mZe-tG-Gm8" firstAttribute="leading" secondItem="7JT-7R-lw4" secondAttribute="leading" id="scf-xJ-Rnr"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAb-Km-xLZ">
-                                <rect key="frame" x="25" y="382" width="364" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET7-Ex-RYa">
                                 <rect key="frame" x="105" y="354" width="205" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -278,22 +262,16 @@
                         <viewLayoutGuide key="safeArea" id="ibK-5F-w36"/>
                         <color key="backgroundColor" red="0.1647058824" green="0.78039215689999997" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IAb-Km-xLZ" firstAttribute="leading" secondItem="NR3-PA-yDz" secondAttribute="leading" constant="25" id="1d7-MW-LBV"/>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="leading" secondItem="ibK-5F-w36" secondAttribute="leading" id="2C5-yn-42W"/>
-                            <constraint firstAttribute="trailing" secondItem="IAb-Km-xLZ" secondAttribute="trailing" constant="25" id="CyK-E0-ks9"/>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="top" secondItem="ibK-5F-w36" secondAttribute="top" id="HHp-L5-4dK"/>
-                            <constraint firstItem="ibK-5F-w36" firstAttribute="trailing" secondItem="IAb-Km-xLZ" secondAttribute="trailing" constant="25" id="Pkt-t9-Er4"/>
                             <constraint firstItem="Mkq-A4-A98" firstAttribute="trailing" secondItem="ibK-5F-w36" secondAttribute="trailing" id="b5A-nE-cpV"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="leading" secondItem="ibK-5F-w36" secondAttribute="leading" id="dag-ZR-y4c"/>
-                            <constraint firstAttribute="bottom" secondItem="IAb-Km-xLZ" secondAttribute="bottom" constant="400" id="fZJ-C8-C2u"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="trailing" secondItem="ibK-5F-w36" secondAttribute="trailing" id="mpt-SH-Lld"/>
-                            <constraint firstItem="ibK-5F-w36" firstAttribute="bottom" secondItem="IAb-Km-xLZ" secondAttribute="bottom" constant="480" id="mqi-Ge-VS3"/>
                             <constraint firstItem="7JT-7R-lw4" firstAttribute="top" secondItem="Mkq-A4-A98" secondAttribute="bottom" constant="-100" id="yL0-RW-8ad"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3kc-C7-WxD"/>
                     <connections>
-                        <outlet property="adviceLabel" destination="IAb-Km-xLZ" id="IKk-SJ-sCS"/>
                         <outlet property="emailTextField" destination="F21-w0-z4z" id="cQ3-UR-iXP"/>
                         <outlet property="passwordTextField" destination="abR-gz-opL" id="zwF-nb-nu7"/>
                         <segue destination="lwd-AH-u8E" kind="show" identifier="LoginToChat" id="j9q-Rm-d7k"/>
@@ -416,7 +394,7 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="j9q-Rm-d7k"/>
-        <segue reference="TtN-Ns-iqz"/>
+        <segue reference="8Vs-f4-uSG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
@@ -435,9 +413,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

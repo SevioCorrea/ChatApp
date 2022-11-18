@@ -15,7 +15,6 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var adviceLabel: UILabel!
     
 
     
@@ -24,9 +23,10 @@ class RegisterViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
-                    self.adviceLabel.font = UIFont.preferredFont(forTextStyle: .body)
-
-                    self.adviceLabel.text = e.localizedDescription
+                    let alert = UIAlertController(title: "Oops!", message: e.localizedDescription, preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "Ok", style: .cancel)
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true)
                     print(e.localizedDescription) // Localized para mostrar o erro no Idioma do Dispositivo
                 } else {
                     // If not get error
