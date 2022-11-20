@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		22262D4A2928FF1D009D1894 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22262D4C2928FF1D009D1894 /* Localizable.strings */; };
+		22262D5029290980009D1894 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22262D4E29290980009D1894 /* MessageCell.swift */; };
+		22262D5129290980009D1894 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22262D4F29290980009D1894 /* MessageCell.xib */; };
 		2241B2F6291957DF00E68806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241B2F5291957DF00E68806 /* AppDelegate.swift */; };
 		2241B2F8291957DF00E68806 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2241B2F7291957DF00E68806 /* SceneDelegate.swift */; };
 		2241B2FF291957E000E68806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2241B2FE291957E000E68806 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 		22262D472928FD9E009D1894 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		22262D4B2928FF1D009D1894 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		22262D4D2928FF23009D1894 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		22262D4E29290980009D1894 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		22262D4F29290980009D1894 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		2241B2F2291957DF00E68806 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2241B2F5291957DF00E68806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2241B2F7291957DF00E68806 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				2241B3092919580C00E68806 /* Main.storyboard */,
+				22262D4E29290980009D1894 /* MessageCell.swift */,
+				22262D4F29290980009D1894 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22262D4A2928FF1D009D1894 /* Localizable.strings in Resources */,
+				22262D5129290980009D1894 /* MessageCell.xib in Resources */,
 				2241B30B2919580D00E68806 /* Main.storyboard in Resources */,
 				228750AE292416AF001BF67D /* GoogleService-Info.plist in Resources */,
 				2241B302291957E000E68806 /* LaunchScreen.storyboard in Resources */,
@@ -265,6 +272,7 @@
 				227EF5C82927FD6D00152D1A /* Message.swift in Sources */,
 				2241B316291958D600E68806 /* ChatViewController.swift in Sources */,
 				2241B3122919589C00E68806 /* RegisterViewController.swift in Sources */,
+				22262D5029290980009D1894 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -407,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
