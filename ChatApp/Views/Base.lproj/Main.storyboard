@@ -369,7 +369,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="q4C-t7-Wou">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                        <color key="barTintColor" name="BrandBlue"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -386,7 +389,7 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="j9q-Rm-d7k"/>
-        <segue reference="8Vs-f4-uSG"/>
+        <segue reference="TtN-Ns-iqz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
