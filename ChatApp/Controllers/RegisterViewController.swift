@@ -16,7 +16,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-
+    
     
     @IBAction func registerPressed(_ sender: UIButton) {
         
@@ -34,7 +34,7 @@ class RegisterViewController: UIViewController {
                     self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
-          
+            
         }
     }
     

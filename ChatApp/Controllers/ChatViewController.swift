@@ -42,29 +42,29 @@ class ChatViewController: UIViewController {
         db.collection(K.FStore.collectionName)
             .order(by: K.FStore.dateField)
             .addSnapshotListener { (querySnapshot, error) in
-            self.messages = []
+                self.messages = []
                 
-            if let e = error {
-                print("There was an issue retrieving data from Firestore. \(e)")
-            } else {
-                if let snapshotDocuments = querySnapshot?.documents {
-                    for doc in snapshotDocuments {
-                        let data = doc.data()
-                        if let messagesender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
-                            let newMessage = Message(sender: messagesender, body: messageBody)
-                            self.messages.append(newMessage)
-                            
-                            
-                            DispatchQueue.main.async {
-                                self.tableView.reloadData()
-                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
-                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+                if let e = error {
+                    print("There was an issue retrieving data from Firestore. \(e)")
+                } else {
+                    if let snapshotDocuments = querySnapshot?.documents {
+                        for doc in snapshotDocuments {
+                            let data = doc.data()
+                            if let messagesender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
+                                let newMessage = Message(sender: messagesender, body: messageBody)
+                                self.messages.append(newMessage)
+                                
+                                
+                                DispatchQueue.main.async {
+                                    self.tableView.reloadData()
+                                    let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                    self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+                                }
                             }
                         }
                     }
                 }
             }
-        }
     }
     
     
@@ -132,8 +132,6 @@ extension ChatViewController: UITableViewDataSource {
         
         return cell
     }
-    
-    
 }
 
 extension ChatViewController: UITableViewDelegate {
